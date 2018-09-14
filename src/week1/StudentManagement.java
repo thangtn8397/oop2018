@@ -61,9 +61,8 @@ public class StudentManagement {
 		students.get(0).setGroup("INT2201");
     	System.out.println(students.get(0).getInfo());
         StudentManagement studentManagement = new StudentManagement();
-//		studentManagement.studentsByGroup();
+		studentManagement.studentsByGroup();
         studentManagement.removeStudent("17021026");
-//		System.out.println(students);
 
         for(Student i : students) {
             System.out.println(i.getInfo());
