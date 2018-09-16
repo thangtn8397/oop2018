@@ -5,7 +5,7 @@ public class StudentManagement {
     // TODO: khai báo thuộc tính students là array chứa các đối tượng thuộc lớp Student (max. 100)
     public static ArrayList<Student> students = new ArrayList<> ();
     public String[] Group = new String[students.size()];
-    public static boolean sameGroup(Student s1, Student s2) {
+    public  boolean sameGroup(Student s1, Student s2) {
         // TODO:
         if(s1.getGroup().equals(s2.getGroup())) return true;
         return false;
@@ -57,10 +57,11 @@ public class StudentManagement {
         students.add(a);
         students.add(b);
         students.add(c);
-        System.out.println(sameGroup(a,b));
+
 		students.get(0).setGroup("INT2201");
     	System.out.println(students.get(0).getInfo());
         StudentManagement studentManagement = new StudentManagement();
+        System.out.println(studentManagement.sameGroup(a,b));
 		studentManagement.studentsByGroup();
         studentManagement.removeStudent("17021026");
 
