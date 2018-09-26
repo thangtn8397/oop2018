@@ -53,7 +53,7 @@ public class StudentManagement {
         // TODO:
         Student a = new Student("Trinh Nhu Thang", "17021026", "17021026@vnu.edu.vn");
         Student b = new Student("Nguyen Van A", "17021028", "ax@gmail.com");
-        Student c = new Student(a);
+        Student c = new Student(b);
         students.add(a);
         students.add(b);
         students.add(c);
