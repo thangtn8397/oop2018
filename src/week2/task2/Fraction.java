@@ -46,7 +46,7 @@ public class Fraction {
         // TODO: Phương thức chia hai phân số (this và other), trả về đối tượng Fraction mới
         Fraction f = new Fraction(0,1);
         f.numerator = this.numerator * other.denominator;
-        f.denominator = this.denominator * other.denominator;
+        f.denominator = this.denominator * other.numerator;
         return f;
     }
     public boolean equals(Object obj){

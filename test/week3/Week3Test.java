@@ -2,21 +2,22 @@ package week3;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import static org.junit.Assert.assertEquals;
+import org.junit.Test;
 
 public class Week3Test {
 
     // TODO: Viết 5 testcase cho phương thức max()
-
+    @Test
     public void testMax(){
-        assertEquals(4,Week3.max(4, 5));
-        assertEquals(3724,Week3.max(3724,3725));
-        assertEquals(10,Week3.max(10,20));
-        assertEquals(0,Week3.max(0,1));
-        assertEquals(5,Week3.max(5,30));
+        assertEquals(5,Week3.max(4, 5));
+        assertEquals(3725,Week3.max(3724,3725));
+        assertEquals(20,Week3.max(10,20));
+        assertEquals(1,Week3.max(0,1));
+        assertEquals(30,Week3.max(5,30));
     }
 
     // TODO: Viết 5 testcase cho phương thức minOfArray()
-
+    @Test
     public void testMinOfArray(){
         int[] arr = {2,1,4,7,8};
         assertEquals(1,Week3.minOfArray(arr));
@@ -29,7 +30,7 @@ public class Week3Test {
         int[] arr4 = {5,100,3,0,7};
         assertEquals(0, Week3.minOfArray(arr4));
     }
-
+    @Test
     // TODO: Viết 5 testcase cho phương thức calculateBMI()
     public void testcalculateBMI(){
         assertEquals("Binh thuong", Week3.calculateBMI(60,1.7));
